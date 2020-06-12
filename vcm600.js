@@ -169,7 +169,7 @@ var toggleLoop = function (channel, control, value, status, group) {
             midi.sendShortMsg("0x" + (90 + channel), 0x41, 0x7F);
             vcm600.loopActive[group] = 1;
         } else {
-            engine.setValue(group, "beatloop_4_toggle",0)
+            engine.setValue(group, "beatloop_4_toggle", 0)
             vcm600.loopActive[group] = 0;
             midi.sendShortMsg("0x" + (90 + channel), 0x41, 0x00);
         }

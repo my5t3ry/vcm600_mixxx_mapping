@@ -5,7 +5,7 @@
         <author>Your Name Here</author>
         <description>HID mapping for the SuperCool controller</description>
         <devices>
-            <product protocol="hid" vendor_id="0x1aa1" product_id="0x0040" />
+            <product protocol="hid" vendor_id="0x1aa1" product_id="0x0040"/>
         </devices>
     </info>
     <controller id="SuperCoolHID">

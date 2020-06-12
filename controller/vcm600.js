@@ -5,112 +5,118 @@ vcm600.loopActive = [];
 vcm600.init = function (id, debugging) {
     for (var ii = 0; ii <= 13; ii++) {
         for (var i = 1; i <= 90; i++) {
-             midi.sendShortMsg("0x9"+(ii).toString(16),  i, 0x00);
+            midi.sendShortMsg("0x9" + (ii).toString(16), i, 0x00);
         }
     }
     for (var ii = 0; ii <= 13; ii++) {
         for (var i = 40; i <= 90; i++) {
             sleepFor(2);
-            midi.sendShortMsg("0x9"+(ii).toString(16),  i, 0x7F);
+            midi.sendShortMsg("0x9" + (ii).toString(16), i, 0x7F);
         }
     }
     for (var ii = 0; ii <= 13; ii++) {
         for (var i = 40; i <= 90; i++) {
             sleepFor(2);
-            midi.sendShortMsg("0x9"+(ii).toString(16),  i, 0x00);
+            midi.sendShortMsg("0x9" + (ii).toString(16), i, 0x00);
         }
     }
-    for (var i = 40; i <= 90; i++) {     
-   for (var ii = 0; ii <= 13; ii++) {
+    for (var i = 40; i <= 90; i++) {
+        for (var ii = 0; ii <= 13; ii++) {
             sleepFor(6);
-            midi.sendShortMsg("0x9"+(ii).toString(16),  i, 0x7F);
+            midi.sendShortMsg("0x9" + (ii).toString(16), i, 0x7F);
         }
     }
-for (var i = 90; i > 40; i--) {    
-for (var ii = 0; ii <= 13; ii++) {
-    
+    for (var i = 90; i > 40; i--) {
+        for (var ii = 0; ii <= 13; ii++) {
+
             sleepFor(6);
-            midi.sendShortMsg("0x9"+(ii).toString(16),  i, 0x00);
+            midi.sendShortMsg("0x9" + (ii).toString(16), i, 0x00);
         }
     }
-  for (var i = 40; i <= 90; i++) {
-   for (var ii = 13; ii >= 0; ii--) {
-if(i%2==0){
-            midi.sendShortMsg("0x9"+(ii).toString(16),  i, 0x7F);
-        }}
+    for (var i = 40; i <= 90; i++) {
+        for (var ii = 13; ii >= 0; ii--) {
+            if (i % 2 == 0) {
+                midi.sendShortMsg("0x9" + (ii).toString(16), i, 0x7F);
+            }
+        }
     }
-sleepFor(4);
+    sleepFor(4);
     for (var ii = 0; ii <= 13; ii++) {
         for (var i = 40; i <= 90; i++) {
-             midi.sendShortMsg("0x9"+(ii).toString(16),  i, 0x00);
+            midi.sendShortMsg("0x9" + (ii).toString(16), i, 0x00);
         }
     }
-  for (var i = 40; i <= 90; i++) {
-   for (var ii = 13; ii >= 0; ii--) {
-if(i%2!=0){
-            midi.sendShortMsg("0x9"+(ii).toString(16),  i, 0x7F);
-        }}
+    for (var i = 40; i <= 90; i++) {
+        for (var ii = 13; ii >= 0; ii--) {
+            if (i % 2 != 0) {
+                midi.sendShortMsg("0x9" + (ii).toString(16), i, 0x7F);
+            }
+        }
     }
-sleepFor(4);
+    sleepFor(4);
 
     for (var ii = 0; ii <= 13; ii++) {
         for (var i = 1; i <= 90; i++) {
-             midi.sendShortMsg("0x9"+(ii).toString(16),  i, 0x00);
+            midi.sendShortMsg("0x9" + (ii).toString(16), i, 0x00);
         }
     }
-  for (var i = 40; i <= 90; i++) {
-   for (var ii = 13; ii >= 0; ii--) {
-if(i%2==0){
-            midi.sendShortMsg("0x9"+(ii).toString(16),  i, 0x7F);
-        }}
+    for (var i = 40; i <= 90; i++) {
+        for (var ii = 13; ii >= 0; ii--) {
+            if (i % 2 == 0) {
+                midi.sendShortMsg("0x9" + (ii).toString(16), i, 0x7F);
+            }
+        }
     }
-sleepFor(4);
+    sleepFor(4);
 
     for (var ii = 0; ii <= 13; ii++) {
         for (var i = 40; i <= 90; i++) {
-             midi.sendShortMsg("0x9"+(ii).toString(16),  i, 0x00);
+            midi.sendShortMsg("0x9" + (ii).toString(16), i, 0x00);
         }
     }
-  for (var i = 40; i <= 90; i++) {
-   for (var ii = 13; ii >= 0; ii--) {
-if(i%2!=0){
-            midi.sendShortMsg("0x9"+(ii).toString(16),  i, 0x7F);
-        }}
+    for (var i = 40; i <= 90; i++) {
+        for (var ii = 13; ii >= 0; ii--) {
+            if (i % 2 != 0) {
+                midi.sendShortMsg("0x9" + (ii).toString(16), i, 0x7F);
+            }
+        }
     }
-sleepFor(4);
+    sleepFor(4);
 
     for (var ii = 0; ii <= 13; ii++) {
         for (var i = 1; i <= 90; i++) {
-             midi.sendShortMsg("0x9"+(ii).toString(16),  i, 0x00);
+            midi.sendShortMsg("0x9" + (ii).toString(16), i, 0x00);
         }
     }
-  for (var i = 40; i <= 90; i++) {
-   for (var ii = 13; ii >= 0; ii--) {
-if(i%2==0){
-            midi.sendShortMsg("0x9"+(ii).toString(16),  i, 0x7F);
-        }}
+    for (var i = 40; i <= 90; i++) {
+        for (var ii = 13; ii >= 0; ii--) {
+            if (i % 2 == 0) {
+                midi.sendShortMsg("0x9" + (ii).toString(16), i, 0x7F);
+            }
+        }
     }
-sleepFor(4);
+    sleepFor(4);
 
     for (var ii = 0; ii <= 13; ii++) {
         for (var i = 40; i <= 90; i++) {
-             midi.sendShortMsg("0x9"+(ii).toString(16),  i, 0x00);
+            midi.sendShortMsg("0x9" + (ii).toString(16), i, 0x00);
         }
     }
-  for (var i = 40; i <= 90; i++) {
-   for (var ii = 13; ii >= 0; ii--) {
-if(i%2!=0){
-            midi.sendShortMsg("0x9"+(ii).toString(16),  i, 0x7F);
-        }}
+    for (var i = 40; i <= 90; i++) {
+        for (var ii = 13; ii >= 0; ii--) {
+            if (i % 2 != 0) {
+                midi.sendShortMsg("0x9" + (ii).toString(16), i, 0x7F);
+            }
+        }
     }
-sleepFor(4);
+    sleepFor(4);
 
     for (var ii = 0; ii <= 13; ii++) {
         for (var i = 1; i <= 90; i++) {
-             midi.sendShortMsg("0x9"+(ii).toString(16),  i, 0x00);
+            midi.sendShortMsg("0x9" + (ii).toString(16), i, 0x00);
         }
     }
-    
+
 }
 vcm600.shutdown = function () {
     for (var i = 1; i <= 90; i++) {
@@ -260,7 +266,7 @@ var toggleLoop = function (channel, control, value, status, group) {
             midi.sendShortMsg("0x" + (90 + channel), 0x41, 0x7F);
             vcm600.loopActive[group] = 1;
         } else {
-            engine.setValue(group, "beatloop_4_toggle",0)
+            engine.setValue(group, "beatloop_4_toggle", 0)
             vcm600.loopActive[group] = 0;
             midi.sendShortMsg("0x" + (90 + channel), 0x41, 0x00);
         }
