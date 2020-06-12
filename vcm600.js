@@ -17,13 +17,11 @@ vcm600.init = function (id, debugging) {
     for (var ii = 0; ii <= 9; ii++) {
         for (var i = 1; i <= 90; i++) {
             sleepFor(1);
-
             midi.sendShortMsg("0x" + (90 + ii), i, 0x00);
         }
     }
 }
 vcm600.shutdown = function () {
-    // turn off all LEDs
     for (var i = 1; i <= 90; i++) {
         midi.sendShortMsg(0x90, i, 0x00);
     }
@@ -31,44 +29,28 @@ vcm600.shutdown = function () {
 
 
 var enableEffect1 = function (channel, control, value, status, group) {
-
     var curValue = engine.getValue("[EffectRack1_EffectUnit1_Effect1]", "enabled");
-    print(curValue);
     if (value == 127) {
         if (curValue == 0) {
             engine.setValue("[EffectRack1_EffectUnit1_Effect1]", "enabled", 1);
-
             midi.sendShortMsg("0x9C", 0x4F, 0x7F);
-
-
         } else {
             engine.setValue("[EffectRack1_EffectUnit1_Effect1]", "enabled", 0);
-
             midi.sendShortMsg("0x9C", 0x4F, 0x00);
-
         }
-        print(channel + control + value + status + group);
     }
 }
 
 var enableEffect2 = function (channel, control, value, status, group) {
-
     var curValue = engine.getValue("[EffectRack1_EffectUnit1_Effect2]", "enabled");
-    print(curValue);
     if (value == 127) {
         if (curValue == 0) {
             engine.setValue("[EffectRack1_EffectUnit1_Effect2]", "enabled", 1);
-
             midi.sendShortMsg("0x9C", 0x50, 0x7F);
-
-
         } else {
             engine.setValue("[EffectRack1_EffectUnit1_Effect2]", "enabled", 0);
-
             midi.sendShortMsg("0x9C", 0x50, 0x00);
-
         }
-        print(channel + control + value + status + group);
     }
 }
 
@@ -161,7 +143,6 @@ var killLow = function (channel, control, value, status, group) {
             engine.setValue(group, "pfl", 0);
             engine.setValue(group, "button_parameter1", 0);
             midi.sendShortMsg("0x" + (90 + channel), 0x3E, 0x00);
-
         }
     }
 }
