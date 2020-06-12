@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MixxxControllerPreset schemaVersion="1" mixxxVersion="1.11+">
+    <info>
+        <name>SuperCool HID Controller</name>
+        <author>Your Name Here</author>
+        <description>HID mapping for the SuperCool controller</description>
+        <devices>
+            <product protocol="hid" vendor_id="0x1aa1" product_id="0x0040" />
+        </devices>
+    </info>
+    <controller id="SuperCoolHID">
+        <scriptfiles>
+            <file filename="vcm600.js" functionprefix="vcm600"/>
+        </scriptfiles>
+    </controller>
+</MixxxControllerPreset>
