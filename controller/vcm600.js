@@ -292,12 +292,14 @@ var play = function (channel, control, value, status, group) {
 var breakDeck = function (channel, control, value, status, group) {
     if (vcm600.selectedGroup != "[Library]") {
         engine.setValue(vcm600.selectedGroup, "rate_temp_down", 1);
+        engine.setValue(vcm600.selectedGroup, "rate_temp_down", 0);
     }
 }
 
 var accelerateDeck = function (channel, control, value, status, group) {
     if (vcm600.selectedGroup != "[Library]") {
         engine.setValue(vcm600.selectedGroup, "rate_temp_up", 1);
+        engine.setValue(vcm600.selectedGroup, "rate_temp_up", 0);
     }
 }
 
