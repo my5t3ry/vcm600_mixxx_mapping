@@ -33,7 +33,7 @@
             <SizePolicy>me,me</SizePolicy>
             <Children>
               <Template src="skin:waveform.xml">
-                <SetVariable name="channum">1</SetVariable>
+                <SetVariable name="channum">2</SetVariable>
                 <SetVariable name="signal_color">#E7C413</SetVariable>
                 <SetVariable name="SignalBgColor">#2f290a</SetVariable>
                 <SetVariable name="SignalRGBLowColor">#ff2a00</SetVariable>
@@ -48,7 +48,7 @@
             <SizePolicy>me,me</SizePolicy>
             <Children>
               <Template src="skin:waveform.xml">
-                <SetVariable name="channum">1</SetVariable>
+                <SetVariable name="channum">3</SetVariable>
                 <SetVariable name="signal_color">#E7C413</SetVariable>
                 <SetVariable name="SignalBgColor">#012322</SetVariable>
                 <SetVariable name="SignalRGBLowColor">#ff2a00</SetVariable>
@@ -63,7 +63,7 @@
             <SizePolicy>me,me</SizePolicy>
             <Children>
               <Template src="skin:waveform.xml">
-                <SetVariable name="channum">1</SetVariable>
+                <SetVariable name="channum">4</SetVariable>
                 <SetVariable name="signal_color">#E7C413</SetVariable>
                 <SetVariable name="SignalBgColor">#2f290a</SetVariable>
                 <SetVariable name="SignalRGBLowColor">#ff2a00</SetVariable>
