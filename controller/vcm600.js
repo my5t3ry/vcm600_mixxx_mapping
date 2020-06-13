@@ -288,6 +288,23 @@ var play = function (channel, control, value, status, group) {
     }
 }
 
+
+var breakDeck = function (channel, control, value, status, group) {
+    if (vcm600.selectedGroup != "[Library]") {
+        vcm600.selectedGroupBeforeLib = vcm600.selectedGroup;
+        vcm600.selectedGroup = "[Library]";
+        engine.setValue("vcm600.selectedGroup", "rate_temp_down", 1);
+    }
+}
+
+var accelerateDeck = function (channel, control, value, status, group) {
+    if (vcm600.selectedGroup != "[Library]") {
+        vcm600.selectedGroupBeforeLib = vcm600.selectedGroup;
+        vcm600.selectedGroup = "[Library]";
+        engine.setValue("vcm600.selectedGroup", "rate_temp_up", 1);
+    }
+}
+
 var loadSelected = function (channel, control, value, status, group) {
     vcm600.selectedGroup = group;
     midi.sendShortMsg("0x" + (92), 0x3F, 0x00);
