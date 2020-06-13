@@ -1,8 +1,8 @@
 <Template>
-    <WidgetStack currentpage="[Spinny],show_spinnies" persist="true">
-        <Size>54f,52me</Size>
-        <Children>
-
-        </Children>
-    </WidgetStack>
+  <WidgetStack currentpage="[Spinny],show_spinnies" persist="true">
+    <Size>54f,52me</Size>
+    <Children>
+     
+    </Children>
+  </WidgetStack>
 </Template>

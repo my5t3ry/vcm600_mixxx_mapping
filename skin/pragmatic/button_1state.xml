@@ -13,34 +13,20 @@ Variables:
   ConfigKey         : left-click control
 -->
 <Template>
-    <PushButton>
-        <TooltipId>
-            <Variable name="TooltipId"/>
-        </TooltipId>
-        <ObjectName>
-            <Variable name="ObjectName"/>
-        </ObjectName>
-        <Size>
-            <Variable name="Size"/>
-        </Size>
-        <NumberStates>1</NumberStates>
-        <State>
-            <Number>0</Number>
-            <Text>
-                <Variable name="state_0_text"/>
-            </Text>
-            <Pressed>skin:/buttons/btn_<Variable name="Icon"/>_down.svg
-            </Pressed>
-            <Unpressed>skin:/buttons/btn_<Variable name="Icon"/>.svg
-            </Unpressed>
-            <Alignment>
-                <Variable name="Align"/>
-            </Alignment>
-        </State>
-        <Connection>
-            <ConfigKey>
-                <Variable name="ConfigKey"/>
-            </ConfigKey>
-        </Connection>
-    </PushButton>
+  <PushButton>
+    <TooltipId><Variable name="TooltipId"/></TooltipId>
+    <ObjectName><Variable name="ObjectName"/></ObjectName>
+    <Size><Variable name="Size"/></Size>
+    <NumberStates>1</NumberStates>
+    <State>
+      <Number>0</Number>
+      <Text><Variable name="state_0_text"/></Text>
+      <Pressed>skin:/buttons/btn_<Variable name="Icon"/>_down.svg</Pressed>
+      <Unpressed>skin:/buttons/btn_<Variable name="Icon"/>.svg</Unpressed>
+      <Alignment><Variable name="Align"/></Alignment>
+    </State>
+    <Connection>
+      <ConfigKey><Variable name="ConfigKey"/></ConfigKey>
+    </Connection>
+  </PushButton>
 </Template>
