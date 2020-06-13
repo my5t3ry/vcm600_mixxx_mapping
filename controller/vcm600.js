@@ -229,7 +229,6 @@ var channelFourEffectEnabled = function (channel, control, value, status, group)
     }
 }
 
-
 var killLow = function (channel, control, value, status, group) {
     var curValue = engine.getValue(group, "button_parameter1");
     if (value == 127) {
