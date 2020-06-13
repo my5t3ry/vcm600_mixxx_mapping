@@ -340,7 +340,7 @@ var prv = function (channel, control, value, status, group) {
         if (vcm600.selectedGroup == "[Library]") {
             action = "MoveUp";
         }
-        engine.setValue(vcm600.selectedGroup, action, 1);
+        engine.setValue(vcm600.selectedGroup, action, 4);
     }
 }
 
@@ -350,7 +350,7 @@ var fwd = function (channel, control, value, status, group) {
         if (vcm600.selectedGroup == "[Library]") {
             action = "MoveDown";
         }
-        engine.setValue(vcm600.selectedGroup, action, 1);
+        engine.setValue(vcm600.selectedGroup, action, 4);
     }
 }
 
