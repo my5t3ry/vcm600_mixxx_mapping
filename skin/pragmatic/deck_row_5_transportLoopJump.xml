@@ -144,7 +144,27 @@
                 </Connection>
               </PushButton>
 
-            
+              <PushButton>
+                <TooltipId>beats_translate_curpos</TooltipId>
+                <NumberStates>1</NumberStates>
+                <RightClickIsPushButton>true</RightClickIsPushButton>
+                <State>
+                  <Number>0</Number>
+                  <Pressed>buttons/btn_beat_curpos_over.svg</Pressed>
+                  <Unpressed>buttons/btn_beat_curpos.svg</Unpressed>
+                </State>
+                <Connection>
+                  <ConfigKey><Variable name="group"/>,beats_translate_curpos</ConfigKey>
+                  <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
+                  <ButtonState>LeftButton</ButtonState>
+                </Connection>
+                <Connection>
+                  <ConfigKey><Variable name="group"/>,beats_translate_match_alignment</ConfigKey>
+                  <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
+                  <ButtonState>RightButton</ButtonState>
+                </Connection>
+              </PushButton>
+
               <PushButton><!-- Play -->
                 <TooltipId>play_cue_set</TooltipId>
                 <NumberStates>2</NumberStates>
