@@ -263,12 +263,12 @@ var toggleLoop = function (channel, control, value, status, group) {
         if (curValue == undefined || curValue == 0) {
             // engine.setValue(group, "beatloop_4_toggle", 1);
             engine.setValue(group, "beatloop_activate", 1);
-            engine.setValue(group, "beatloop_4" + engine.getValue(group, "beatloop_size") + "toggle", 1);
+            engine.setValue(group, "beatloop_" + engine.getValue(group, "beatloop_size") + "_toggle", 1);
             midi.sendShortMsg("0x" + (90 + channel), 0x41, 0x7F);
             vcm600.loopActive[group] = 1;
         } else {
             // engine.setValue(group, "beatloop_activate", 0);
-            engine.setValue(group, "beatloop_4" + engine.getValue(group, "beatloop_size") + "toggle", 1);
+            engine.setValue(group, "beatloop4" + engine.getValue(group, "beatloop_size") + "_toggle", 1);
             vcm600.loopActive[group] = 0;
             midi.sendShortMsg("0x" + (90 + channel), 0x41, 0x00);
         }
