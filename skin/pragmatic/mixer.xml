@@ -36,7 +36,7 @@
                         <Layout>horizontal</Layout>
                         <Children>
                           <Template src="skin:mixer_channel_4decks.xml">
-                            <SetVariable name="channum">3</SetVariable>
+                            <SetVariable name="channum">1</SetVariable>
                             <SetVariable name="deckSide">Left</SetVariable>
                           </Template>
                         </Children>
@@ -47,7 +47,7 @@
                       </WidgetGroup>
 
                       <Template src="skin:mixer_channel_left.xml">
-                        <SetVariable name="channum">1</SetVariable>
+                        <SetVariable name="channum">2</SetVariable>
                         <SetVariable name="deckSide">Left</SetVariable>
                       </Template>
 
@@ -134,7 +134,7 @@
                       </WidgetGroup>
 
                       <Template src="skin:mixer_channel_right.xml">
-                        <SetVariable name="channum">2</SetVariable>
+                        <SetVariable name="channum">3</SetVariable>
                         <SetVariable name="deckSide">Right</SetVariable>
                       </Template>
 
