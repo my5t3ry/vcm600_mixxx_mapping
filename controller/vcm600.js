@@ -288,12 +288,9 @@ var play = function (channel, control, value, status, group) {
     }
 }
 
-
 var breakDeck = function (channel, control, value, status, group) {
     if (vcm600.selectedGroup != "[Library]") {
-
         if (value == 127) {
-
             engine.setValue(vcm600.selectedGroup, "rate_temp_down", 1);
         } else {
             engine.setValue(vcm600.selectedGroup, "rate_temp_down", 0);
@@ -304,16 +301,13 @@ var breakDeck = function (channel, control, value, status, group) {
 
 var accelerateDeck = function (channel, control, value, status, group) {
     if (vcm600.selectedGroup != "[Library]") {
-
         if (value == 127) {
             engine.setValue(vcm600.selectedGroup, "rate_temp_up", 1);
         } else {
             engine.setValue(vcm600.selectedGroup, "rate_temp_up", 0);
-
         }
     }
 }
-
 
 var loadSelected = function (channel, control, value, status, group) {
     vcm600.selectedGroup = group;
