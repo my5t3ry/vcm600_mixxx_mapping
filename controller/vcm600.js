@@ -295,6 +295,7 @@ var loadSelected = function (channel, control, value, status, group) {
     midi.sendShortMsg("0x" + (95), 0x3F, 0x00);
     midi.sendShortMsg("0x" + (90 + channel), 0x3F, 0x7F);
     engine.setValue(group, "LoadSelectedTrack", value);
+    engine.setValue(group, "sync_enabled", true);
     engine.setValue("[Master]", "maximize_library", 0);
 }
 
